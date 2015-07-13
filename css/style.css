@@ -571,3 +571,118 @@ footer {
 .gallery2 li {
   float: left;
 }
+
+
+
+.topSlider {
+    width: 830px;
+    float: right;
+    padding: 20px;
+}
+.slider .stageSlider {
+    width: 760px;
+    position: relative;
+}
+.slider {
+    position: relative;
+}
+.slider .navigationSlider {
+    margin-top: 20px;
+    margin-left: 200px;
+    position: relative;
+}
+.sliderContent {
+    position: relative;
+}
+.sliderContentIn {
+    width: 340px;
+    height: 280px;
+    position: relative;
+    top: 30px;
+    right: -400px;
+}
+.sliderContent h1 {
+    font-size: 46px;
+    font-family: Raleway;
+    color: #fff51f;
+}
+.sliderContent p {
+    width: 330px;
+    color: #fff51f;
+    font-family: Raleway;
+    font-size: 14px;
+    margin-bottom: 60px; 
+}
+.sliderContent button {
+    background: #fff51f;
+    border: 0;
+    padding: 20px 26px;
+    font-family: Raleway;
+    font-weight: bold;
+}
+.slider .carousel {
+    overflow: hidden;
+    position: relative;
+}
+.slider .carousel ul {
+    width: 6000px;
+    position: relative;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.slider .carousel li {
+    width: 760px;
+    float: left;
+}
+.slider .carousel-stageSlider {
+    height: 400px;
+}
+.slider .carousel-navigationSlider li {
+    display: block;
+    width: 40px;
+    height: 4px;
+    cursor: pointer;
+    background: #faef03;
+    margin-right: 8px;
+}
+.slider .carousel-navigationSlider li:last-child {
+    margin-right: 0;
+}
+.slider .carousel-navigationSlider li.active {
+    background: #fb4d01;
+}
+.slider .prev-stageSlider.inactive,
+.slider .next-stageSlider.inactive {
+    display: none;
+}
+.slider .prev-stageSlider.inactive,
+.slider .next-stageSlider.inactive {
+    opacity: .5;
+    cursor: default;
+}
+.slider .slider-control-container {
+    display: block;
+    position: absolute;
+    top: 140px;
+    right: -70px;
+    color: #fff;
+}
+.slider .slider-control-container .prev-stageSlider,
+.slider .slider-control-container .next-stageSlider {
+    position: relative;
+    float: left;
+    width: 30px;
+    height: 50px;
+    background: #fff51f;
+}
+.slider-control-container a:first-child {
+    margin-right: 2px;
+}
+.slider-control-container .prev-stageSlider img,
+.slider-control-container .next-stageSlider img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -8px 0 0 -6px;
+}

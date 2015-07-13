@@ -32,3 +32,51 @@ var width = $('.images li').width();
       margin2 = Math.max(margin2 - width2 * step2, -width2 * (Elem2.length - step2*4));
       container2.css({'margin-left': margin2});
     });
+    
+    
+    
+    
+    $(function() {
+    var connector = function(itemNavigation, carouselStage) {
+        return carouselStage.jcarousel('items').eq(itemNavigation.index());
+    };
+    $(function() {
+        var carouselStage      = $('.carousel-stageSlider').jcarousel();
+        var carouselNavigation = $('.carousel-navigationSlider').jcarousel();
+
+        carouselNavigation.jcarousel('items').each(function() {
+            var item = $(this);
+            var target = connector(item, carouselStage);
+
+            $('.slider .carousel-stageSlider')
+                .jcarousel({
+            interval: 10,
+            wrap: 'both'
+                })
+                .jcarouselAutoscroll({
+                    interval: 5000,
+                    target: '+=1',
+                    autostart: true
+                });
+            item
+                .on('jcarouselcontrol:active', function() {
+                    item.addClass('active');
+                })
+                .on('jcarouselcontrol:inactive', function() {
+                    item.removeClass('active');
+                })
+                .jcarouselControl({
+                    target: target,
+                    carousel: carouselStage
+                });
+        });
+
+        $('.prev-stageSlider').jcarouselControl({
+                target: '-=1'
+            });
+
+        $('.next-stageSlider').jcarouselControl({
+                target: '+=1'
+            });      
+    });
+});
