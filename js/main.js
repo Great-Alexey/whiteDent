@@ -14,7 +14,22 @@ var width = $('.images li').width();
       margin = Math.max(margin - width * step, -width * (Elem.length - step*2));
       container.css({'margin-left': margin}) ;
     });
+
     
+    $('.prev').hover(
+function(){
+  $('.prev').next().css({display: 'block'}) ;
+},
+function(){
+  $('.none').css({display: 'none'}) ;
+});
+$('.next').hover(
+function(){
+  $('.next').next().css({display: 'block'}) ;
+},
+function(){
+  $('.none').css({display: 'none'}) ;
+});
     
     
     var width2 = $('.images2 li').width();
@@ -32,6 +47,22 @@ var width = $('.images li').width();
       margin2 = Math.max(margin2 - width2 * step2, -width2 * (Elem2.length - step2*4));
       container2.css({'margin-left': margin2});
     });
+    
+    $('.prev2').hover(
+function(){
+  $('.prev2').next().css({display: 'block'}) ;
+},
+function(){
+  $('.none').css({display: 'none'}) ;
+});
+$('.next2').hover(
+function(){
+  $('.next2').next().css({display: 'block'}) ;
+},
+function(){
+  $('.none').css({display: 'none'}) ;
+});
+    
     
     
     
@@ -70,13 +101,5 @@ var width = $('.images li').width();
                     carousel: carouselStage
                 });
         });
-
-        $('.prev-stageSlider').jcarouselControl({
-                target: '-=1'
-            });
-
-        $('.next-stageSlider').jcarouselControl({
-                target: '+=1'
-            });      
     });
 });

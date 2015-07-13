@@ -3,7 +3,8 @@
     margin: 0;
     padding: 0;
 }
-img {
+img,
+button {
     cursor: pointer;
 }
 .clear {
@@ -137,10 +138,13 @@ header {
 }
 .headerBottom .headerBottomInRead {
     width: 204px;
-    height: 34px;
+    height: 39px;
     background: #ed5564;
     float: right;
     padding: 8px;
+}
+.headerBottom .headerBottomInRead:hover {
+    background: #e82d3f;
 }
 .headerBottom .headerBottomInRead div {
     width: 160px;
@@ -308,10 +312,17 @@ header {
     display: block;
     font-family: Roboto;
     font-size: 12px;
-    color: #3472a8;
+    color: #4f85b4;
     margin-bottom: 16px;
 }
-.mainBottom .mainBottomRight .mainBottomRightVk .topVk {
+.mainBottom .mainBottomRight div div a:hover {
+    color: #3472a8;
+    
+}
+.mainBottom .mainBottomRight div div p:hover {
+    color: #ed5564;
+}
+/*.mainBottom .mainBottomRight .mainBottomRightVk .topVk {
     background: #428bc7;
     padding: 4px;
     margin-bottom: 10px;
@@ -357,7 +368,7 @@ header {
     font-size: 16px;
     color: #fff;
     background: #428bc7;
-}
+}*/
 
 footer {
     background: #e6eaee;
@@ -518,7 +529,6 @@ footer {
 }
 .content2 {
     width: 144px;
-    /*text-align: center;*/
 }
 .carousel,
 .carousel2 {
@@ -539,18 +549,21 @@ footer {
   display: block;
   border: 0;
 }
-.arrow:hover,
+
+
+
+/*.arrow:hover,
 .arrow2:hover{
   background: #428bca;
   cursor: pointer;
-}
+}*/
 .prev,
 .prev2 {
-  left: 0px;
+  left: 4px;
 }
 .next,
 .next2 {
-  right: 0px;
+  right: 4px;
 }
 .gallery,
 .gallery2 {
@@ -571,86 +584,74 @@ footer {
 .gallery2 li {
   float: left;
 }
-
-
-
-.topSlider {
-    width: 830px;
-    float: right;
-    padding: 20px;
+.mainBottomLeftFirstCarousel .none,
+.mainBottomLeftSecondCarousel .none {
+    display: none;
+    background: #428bca;
+    cursor: pointer;
 }
+#noneR,
+#noneR2 {
+    right: 0px;
+}
+#noneL,
+#noneL2 {
+    left: 0px;
+}
+
+
 .slider .stageSlider {
-    width: 760px;
+    width: 310px;
+    height: 250px;
     position: relative;
 }
 .slider {
+    overflow: hidden;
     position: relative;
 }
 .slider .navigationSlider {
-    margin-top: 20px;
-    margin-left: 200px;
     position: relative;
+    bottom: 14px;
+    left: 45%;
+    z-index: 4;
 }
 .sliderContent {
     position: relative;
 }
-.sliderContentIn {
-    width: 340px;
-    height: 280px;
-    position: relative;
-    top: 30px;
-    right: -400px;
-}
-.sliderContent h1 {
-    font-size: 46px;
-    font-family: Raleway;
-    color: #fff51f;
-}
-.sliderContent p {
-    width: 330px;
-    color: #fff51f;
-    font-family: Raleway;
-    font-size: 14px;
-    margin-bottom: 60px; 
-}
-.sliderContent button {
-    background: #fff51f;
-    border: 0;
-    padding: 20px 26px;
-    font-family: Raleway;
-    font-weight: bold;
-}
-.slider .carousel {
+
+.slider .stageSlider .carouselSl {
     overflow: hidden;
     position: relative;
 }
-.slider .carousel ul {
+.slider .carouselSl ul {
     width: 6000px;
     position: relative;
     list-style: none;
     margin: 0;
     padding: 0;
 }
-.slider .carousel li {
-    width: 760px;
+.slider .carouselSl li {
+    width: 310px;
     float: left;
 }
 .slider .carousel-stageSlider {
-    height: 400px;
+    height: 250px;
 }
 .slider .carousel-navigationSlider li {
     display: block;
-    width: 40px;
-    height: 4px;
+    width: 8px;
+    height: 8px;
+    border-radius: 100px;
     cursor: pointer;
-    background: #faef03;
+    background: #8eb9df;
     margin-right: 8px;
 }
 .slider .carousel-navigationSlider li:last-child {
     margin-right: 0;
 }
 .slider .carousel-navigationSlider li.active {
-    background: #fb4d01;
+    background: #fff;
+    border-radius: 100px;
 }
 .slider .prev-stageSlider.inactive,
 .slider .next-stageSlider.inactive {
@@ -661,28 +662,21 @@ footer {
     opacity: .5;
     cursor: default;
 }
-.slider .slider-control-container {
-    display: block;
-    position: absolute;
-    top: 140px;
-    right: -70px;
-    color: #fff;
-}
-.slider .slider-control-container .prev-stageSlider,
-.slider .slider-control-container .next-stageSlider {
+
+.mainTopCenter {
     position: relative;
-    float: left;
-    width: 30px;
+}
+.fon {
+    width: 310px;
     height: 50px;
-    background: #fff51f;
-}
-.slider-control-container a:first-child {
-    margin-right: 2px;
-}
-.slider-control-container .prev-stageSlider img,
-.slider-control-container .next-stageSlider img {
+    background: url('../img/dotet.png')repeat;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    margin: -8px 0 0 -6px;
+    bottom: 0;
+    text-align: center;
+}
+.fon p {
+    font-family: Roboto;
+    font-size: 18px;
+    color: #fff;
+    margin-top: 8px;
 }
