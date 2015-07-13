@@ -1,0 +1,573 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,700|Raleway:400,700&subset=latin,cyrillic-ext);
+* {
+    margin: 0;
+    padding: 0;
+}
+img {
+    cursor: pointer;
+}
+.clear {
+    clear: both;
+}
+body {
+    font:normal 12px tahoma,arial,verdana,sans-serif;
+}
+header {
+    background: #f3f6f9;
+}
+.headerTop,
+.headerBottomIn,
+.mainTop,
+.mainCenterIn,
+.mainBottom,
+.footerTopIn,
+.footerBottom {
+    width: 980px;
+    margin: 0 auto;
+    /*background: red;*/
+}
+.headerTopLeft,
+.headerTopCenter {
+    float: left;
+    font-family: Roboto;
+    font-size: 13px;
+}
+.headerTopLeft a img {
+    margin: 10px 0 0 0;
+}
+.headerTopLeft p {
+    color: #334556;
+}
+.headerTopCenter div p,
+.headerTopRight p {
+    color: #656d78;
+}
+.headerTopCenter {
+    position: relative;
+    background: #fff;
+    padding: 0px 30px;
+    margin-left: 30px;
+}
+.headerTopCenter > img {
+    position: absolute;
+}
+.headerTopCenter #tre1 {
+    top: 0px;
+    right: 0px;
+}
+.headerTopCenter #tre2 {
+    top: 0px;
+    left: 0px;
+}
+.headerTopCenter div {
+    width: 116px;
+    float: left;
+    text-align: center;
+    margin: 10px 40px 10px 0;
+}
+.headerTopCenter .firstDiv {
+    margin-left: 5px;
+}
+.headerTopCenter .lastDiv {
+    margin-right: 5px;
+}
+.headerTopCenter div img {
+    margin-bottom: 8px;
+}
+.headerTopRight {
+    width: 200px;
+    float: right;
+    padding-top: 10px;
+}
+.headerTopRight .headerTopRightTel {
+    margin-bottom: 4px;
+}
+.headerTopRight .headerTopRightTel p,
+.footerBottomRight .headerTopRightTel p {
+    float: left;
+    font-size: 23px;
+    color: #656d78;
+}
+.headerTopRight .headerTopRightTel p:last-child,
+.footerBottomRight .headerTopRightTel #tel2 {
+    margin-left: 3px;
+    color: #334556;
+}
+.headerTopRight > p {
+    margin-bottom: 6px;
+}
+.headerTopRight button {
+    width: 200px;
+    height: 26px;
+    border: 0;
+    background: #428bca;
+    color: #fff;
+    font-family: Roboto;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.headerTopRight .address img,
+.footerBottomRight .address img {
+    float: left;
+    margin-top: 4px;
+}
+.headerTopRight .address p,
+.footerBottomRight .address p {
+    float: right;
+    width: 170px;
+}
+.headerBottom {
+    /*height: 50px;*/
+    background: #428bca;
+}
+.headerBottom nav a {
+    display: block;
+    float: left;
+    color: #fff;
+    font-family: Roboto;
+    font-size: 16px;
+    padding: 18px;
+    text-decoration: none;
+}
+/*.headerBottom nav a:hover {
+    background: #dedede;
+}*/
+.headerBottom nav a:first-child {
+    padding: 18px 18px 18px 0;
+}
+.headerBottom .headerBottomInRead {
+    width: 204px;
+    height: 34px;
+    background: #ed5564;
+    float: right;
+    padding: 8px;
+}
+.headerBottom .headerBottomInRead div {
+    width: 160px;
+    float: right;
+    font-family: Roboto;
+    color: #fff;
+}
+.headerBottom .headerBottomInRead div p:first-child {
+    font-size: 16px;
+    margin-bottom: 2px;
+}
+.headerBottom .headerBottomInRead div p:last-child {
+    font-size: 11px;
+}
+
+
+
+ 
+.mainTop .mainTopLeft,
+.mainTop .mainTopCenter,
+.mainTop .mainTopRight,
+.mainCenterIn .mainCenterInTop,
+.mainCenterIn .mainCenterInCenter,
+.mainCenterIn .mainCenterInBottom {
+    width: 310px;
+    height: 250px;
+    float: left;
+    /*background: #dedede;*/
+    margin-right: 25px;
+}
+.mainTop,
+.mainCenterIn,
+.mainBottom {
+    padding: 30px 0;
+}
+.mainTop .mainTopRight,
+.mainCenterIn .mainCenterInBottom {
+    margin-right: 0;
+}
+.strelka {
+    width: 26px;
+    height: 26px;
+    background: #3472a8;
+    float: left;
+    text-align: center;
+}
+.strelka img {
+    margin-top: 10px;
+}
+.mainTopLeft div {
+    clear: both;
+    margin-bottom: 6px;
+}
+.mainTopLeft div a {
+    display: block;
+    float: right;
+    width: 268px;
+    padding: 5px 8px;
+    background: #f3f6f9;
+    text-decoration: none;
+    color: #334556;
+    font-family: Roboto;
+    font-size: 14px;
+}
+
+.mainTopRight .mainTopRightButton {
+    padding: 10px;
+    background: #e6eaee;
+}
+.mainTopRight .mainTopRightButton button {
+    width: 290px;
+    height: 50px;
+    background: #428bca;
+    color: #fff;
+    font-family: Roboto;
+    font-size: 20px;
+    border: 0;
+    border-radius: 4px;
+}
+.mainTopRight .mainTopRightContent {
+    height: 158px;
+    border: 1px solid #cdd5dd;
+    padding: 10px;
+}
+.mainTopRight .mainTopRightContent div {
+    margin-bottom: 14px;
+}
+.mainTopRight .mainTopRightContent div:last-child {
+    margin-bottom: 0;
+}
+.mainTopRight .mainTopRightContent div p {
+    width: 244px;
+    float: right;
+    color: #334556;
+    font-family: Roboto;
+    font-size: 14px;
+    margin-top: 2px;
+}
+.mainTopRight .mainTopRightContent div:last-child p {
+    margin-top: 8px;
+}
+.mainCenter {
+    background: #f3f6f9;
+}
+.mainCenterIn .mainCenterInTop,
+.mainCenterIn .mainCenterInCenter,
+.mainCenterIn .mainCenterInBottom {
+    height: 300px;
+    text-align: center;
+}
+
+.mainCenterIn .mainCenterInTop > div,
+.mainCenterIn .mainCenterInCenter > div,
+.mainCenterIn .mainCenterInBottom > div {
+    height: 133px;
+    background: #fff;
+    border: 1px solid #c5cfd9;
+    border-top: 0;
+    padding: 8px;
+    margin-top: -3px;
+}
+.mainCenterIn .mainCenterInTop h3,
+.mainCenterIn .mainCenterInCenter h3,
+.mainCenterIn .mainCenterInBottom h3 {
+    font-family: Roboto;
+    font-size: 18px;
+    color: #334556;
+    padding: 2px 8px 8px 8px;
+    border-bottom: 1px solid #c5cfd9;
+}
+.mainCenterIn .mainCenterInTop p,
+.mainCenterIn .mainCenterInCenter p,
+.mainCenterIn .mainCenterInBottom p {
+    font-family: Roboto;
+    font-size: 14px;
+    color: #656d78;
+    margin-top: 14px;
+    line-height: 20px;
+}
+
+
+
+
+.mainBottom .mainBottomLeft {
+    width: 648px;
+    float: left;
+}
+.mainBottom .mainBottomRight {
+    width: 310px;
+    float: right;
+}
+.mainBottom .mainBottomRight h2 {
+    font-family: Roboto;
+    font-size: 24px;
+    color: #1d2024;
+    margin-bottom: 24px;
+}
+.mainBottom .mainBottomRight div div p {
+    font-family: Roboto;
+    font-size: 11px;
+    color: #ed5564;
+    margin-bottom: 10px;
+}
+.mainBottom .mainBottomRight div div a {
+    display: block;
+    font-family: Roboto;
+    font-size: 12px;
+    color: #3472a8;
+    margin-bottom: 16px;
+}
+.mainBottom .mainBottomRight .mainBottomRightVk .topVk {
+    background: #428bc7;
+    padding: 4px;
+    margin-bottom: 10px;
+}
+.mainBottom .mainBottomRight .mainBottomRightVk .topVk #vk1 {
+    float: left;
+}
+.mainBottom .mainBottomRight .mainBottomRightVk .topVk p {
+    float: left;
+    margin: 4px 5px 0 5px;
+    font-size: 13px;
+    color: #fff;
+}
+.mainBottom .mainBottomRight .mainBottomRightVk .topVk #vk2 {
+    float: right;
+}
+.mainBottom .mainBottomRight .mainBottomRightVk .centerVk {
+    width: 140px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.mainBottom .mainBottomRight .mainBottomRightVk .centerVk p {
+    margin-bottom: 30px;
+    font-size: 13px;
+    color: #3e5d7a;
+}
+.mainBottom .mainBottomRight .mainBottomRightVk .centerVk #vkPic1 {
+    float: left;
+}
+.mainBottom .mainBottomRight .mainBottomRightVk .centerVk #vkPic2 {
+    float: right;
+}
+.mainBottom .mainBottomRight .mainBottomRightVk .centerVk #vkPic1 a,
+.mainBottom .mainBottomRight .mainBottomRightVk .centerVk #vkPic2 a {
+    text-decoration: none;
+}
+.mainBottom .mainBottomRight .mainBottomRightVk button {
+    width: 310px;
+    height: 34px;
+    border: 0;
+    font-family: Roboto;
+    font-size: 16px;
+    color: #fff;
+    background: #428bc7;
+}
+
+footer {
+    background: #e6eaee;
+}
+.footerTop {
+    background: #f3f6f9;
+}
+.footerTop .footerTopIn {
+    padding: 15px 0;
+}
+.footerTop .footerTopIn a,
+.footerTop .footerTopIn p {
+    float: left; 
+}
+.footerTop .footerTopIn a {
+    display: block;
+    padding: 0 13px;
+    text-decoration: none;
+    color: #428bc7;
+    font-family: Roboto;
+    font-size: 13px;
+}
+.footerTop .footerTopIn a:first-child {
+    padding-left: 0;
+}
+.footerTop .footerTopIn a:last-child {
+    padding-right: 0;
+}
+.footerBottom {
+    padding: 30px 0;
+}
+.footerBottom .footerBottomLeft {
+    width: 320px;
+    float: left;
+}
+.footerBottom .footerBottomLeft .navig {
+    margin-bottom: 30px;
+}
+.footerBottom .footerBottomLeft .navig a {
+    display: block;
+    float: left;
+    margin-right: 72px;
+    font-family: Roboto;
+    font-size: 13px;
+    color: #334556;
+}
+.footerBottom .footerBottomLeft .navig .last {
+    margin-right: 0;
+}
+.footerBottom .footerBottomLeft p {
+    font-family: Roboto;
+    font-size: 12px;
+    color: #656d78;
+}
+.footerBottom .footerBottomLeft #rights {
+    margin-bottom: 20px;
+}
+.footerBottom .footerBottomLeft #license {
+    margin-bottom: 30px;
+}
+.footerBottom .footerBottomLeft .media img {
+    float: left;
+    margin-right: 10px;
+}
+.footerBottom .footerBottomLeft .media p {
+    width: 180px;
+    float: left;
+    margin-top: 6px;
+    font-size: 13px;
+    color: #3472a8;
+}
+.footerBottom .footerBottomCenter {
+    width: 346px;
+    float: left;
+    text-align: center;
+    padding-top: 14px;
+}
+.footerBottom .footerBottomRight {
+    float: right;
+}
+.footerBottomRight .headerTopRightTel {
+    margin-bottom: 10px;
+}
+.footerBottomRight .address img {
+    margin: 0 4px 0 0;
+}
+.footerBottomRight .address p {
+    width: 290px;
+    margin-top: 7px;
+    font-size: 13px;
+    color: #656d78;
+}
+.footerBottomRight .address {
+    margin-bottom: 22px;
+}
+.footerBottomRight .seti p {
+    margin-bottom: 10px;
+    font-family: Roboto;
+    font-size: 16px;
+    color: #334556;
+}
+.footerBottomRight .seti div img {
+    display: block;
+    float: left;
+    margin-right: 10px;
+}
+
+
+.mainBottomLeftFirstCarousel {
+    margin-bottom: 60px;
+}
+.mainBottomLeftFirstCarousel h2,
+.mainBottomLeftSecondCarousel h2 {
+    font-family: Roboto;
+    font-size: 24px;
+    color: #1d2024;
+    margin-bottom: 20px;
+}
+.content {
+    width: 290px;
+    height: 114px;
+}
+.content > img {
+    float: left;
+    margin-right: 10px;
+}
+.content div {
+    width: 160px;
+    float: left;
+}
+.content div p {
+    font-family: Roboto;
+    font-size: 14px;
+    color: #334556;
+    font-weight: bold;
+}
+.content div p:first-child {
+    font-size: 16px;
+}
+.content div p:nth-child(2) {
+    margin-bottom: 12px;
+}
+.content div .prof {
+    color: #656d78;
+    font-size: 13px;
+    margin-bottom: 14px;
+}
+.content div button {
+    width: 98px;
+    height: 20px;
+    border: 1px solid #428bc7;
+    color: #428bca;
+    background: #f3f6f9;
+}
+.content div button img {
+    margin-left: 3px;
+    margin-bottom: 1px;
+}
+.content2 {
+    width: 144px;
+    /*text-align: center;*/
+}
+.carousel,
+.carousel2 {
+  position: relative;
+  width: 646px;
+
+}
+
+.arrow,
+.arrow2 {
+    width: 30px;
+    height: 30px;
+  position: absolute;
+  top: 42px;
+  padding: 0;
+  background: #e6eaee;
+  color: #444;
+  display: block;
+  border: 0;
+}
+.arrow:hover,
+.arrow2:hover{
+  background: #428bca;
+  cursor: pointer;
+}
+.prev,
+.prev2 {
+  left: 0px;
+}
+.next,
+.next2 {
+  right: 0px;
+}
+.gallery,
+.gallery2 {
+  width: 570px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.gallery ul,
+.gallery2 ul {
+  height: 114px;
+  width: 9999px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  transition: all 0.3s ease-out 0.1s;
+}
+.gallery li,
+.gallery2 li {
+  float: left;
+}
