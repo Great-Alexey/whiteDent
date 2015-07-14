@@ -122,19 +122,24 @@ header {
     width: 170px;
 }
 .headerBottom {
+    height: 55px;
     background: #428bca;
 }
 .headerBottom nav a {
     display: block;
     float: left;
-    color: #fff;
+    color: #cfe2f1;
     font-family: Roboto;
     font-size: 16px;
-    padding: 18px;
+    margin: 18px;
     text-decoration: none;
 }
 .headerBottom nav a:first-child {
-    padding: 18px 18px 18px 0;
+    margin: 18px 18px 17px 0;
+}
+.headerBottom nav a:hover {
+    color: #fff;
+    border-bottom: 1px solid #fff;
 }
 .headerBottom .headerBottomInRead {
     width: 204px;
@@ -205,6 +210,17 @@ header {
     font-family: Roboto;
     font-size: 14px;
 }
+.mainTopLeft div:hover a {
+    width: 267px;
+    padding: 4px 8px 3px 8px;
+    background: #fff;
+    border: 1px solid #428bca;
+    border-left: 0; 
+}
+.mainTopLeft div:hover {
+    background: #428bca;
+    cursor: pointer;
+}
 .mainTopRight .mainTopRightButton {
     padding: 10px;
     background: #e6eaee;
@@ -218,6 +234,9 @@ header {
     font-size: 20px;
     border: 0;
     border-radius: 4px;
+}
+.mainTopRight .mainTopRightButton button:hover {
+    background: #3472a8;
 }
 .mainTopRight .mainTopRightContent {
     height: 158px;
@@ -319,7 +338,9 @@ footer {
     background: #f3f6f9;
 }
 .footerTop .footerTopIn {
-    padding: 15px 0;
+
+    height: 16px;
+    padding: 15px 0 14px 0;
 }
 .footerTop .footerTopIn a,
 .footerTop .footerTopIn p {
@@ -327,17 +348,21 @@ footer {
 }
 .footerTop .footerTopIn a {
     display: block;
-    padding: 0 13px;
+    margin: 0 13px;
     text-decoration: none;
     color: #428bc7;
     font-family: Roboto;
     font-size: 13px;
 }
 .footerTop .footerTopIn a:first-child {
-    padding-left: 0;
+    margin-left: 0;
 }
 .footerTop .footerTopIn a:last-child {
-    padding-right: 0;
+    margin-right: 0;
+}
+.footerTop .footerTopIn a:hover {
+    color: #e82d3f;
+    border-bottom: 1px solid #e82d3f;
 }
 .footerBottom {
     padding: 30px 0;
@@ -359,6 +384,9 @@ footer {
 }
 .footerBottom .footerBottomLeft .navig .last {
     margin-right: 0;
+}
+.footerBottom .footerBottomLeft .navig a:hover {
+    color: #428bc7;
 }
 .footerBottom .footerBottomLeft p {
     font-family: Roboto;
