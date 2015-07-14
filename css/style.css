@@ -115,6 +115,7 @@ header {
 .footerBottomRight .address img {
     float: left;
     margin-top: 4px;
+    cursor: default;
 }
 .headerTopRight .address p,
 .footerBottomRight .address p {
@@ -181,6 +182,9 @@ header {
 .mainBottom {
     padding: 30px 0;
 }
+.mainBottom {
+    padding-bottom: 60px;
+}
 .mainTop .mainTopRight,
 .mainCenterIn .mainCenterInBottom {
     margin-right: 0;
@@ -197,7 +201,7 @@ header {
 }
 .mainTopLeft div {
     clear: both;
-    margin-bottom: 6px;
+    margin-bottom: 3px;
 }
 .mainTopLeft div a {
     display: block;
@@ -245,6 +249,9 @@ header {
 }
 .mainTopRight .mainTopRightContent div {
     margin-bottom: 14px;
+}
+.mainTopRight .mainTopRightContent div img {
+    cursor: default;
 }
 .mainTopRight .mainTopRightContent div:last-child {
     margin-bottom: 0;
@@ -305,6 +312,12 @@ header {
     width: 310px;
     float: right;
 }
+.mainBottomRightNews {
+    margin-bottom: 60px;
+}
+.mainBottomRightNews > div {
+    margin-bottom: 16px;
+}
 .mainBottom .mainBottomRight h2 {
     font-family: Roboto;
     font-size: 24px;
@@ -322,7 +335,6 @@ header {
     font-family: Roboto;
     font-size: 12px;
     color: #4f85b4;
-    margin-bottom: 16px;
 }
 .mainBottom .mainBottomRight div div a:hover {
     color: #3472a8;
@@ -345,6 +357,9 @@ footer {
 .footerTop .footerTopIn a,
 .footerTop .footerTopIn p {
     float: left; 
+}
+.footerTop .footerTopIn p {
+    color: #c0c8ce;
 }
 .footerTop .footerTopIn a {
     display: block;
@@ -412,7 +427,7 @@ footer {
 }
 .footerBottom .footerBottomCenter {
     width: 346px;
-    margin-left: 320px;
+    float: left;
     text-align: center;
     padding-top: 14px;
 }
@@ -532,6 +547,9 @@ footer {
   margin: 0 auto;
   overflow: hidden;
 }
+.gallery2 {
+    width: 560px;
+}
 .gallery ul,
 .gallery2 ul {
   height: 114px;
@@ -540,6 +558,9 @@ footer {
   padding: 0;
   list-style: none;
   transition: all 0.3s ease-out 0.1s;
+}
+.gallery2 ul {
+    height: 132px;
 }
 .gallery li,
 .gallery2 li {
