@@ -25,10 +25,13 @@ header {
 .footerBottom {
     width: 980px;
     margin: 0 auto;
-    /*background: red;*/
+}
+.headerTop {
+    height: 136px;
 }
 .headerTopLeft,
 .headerTopCenter {
+    height: 136px;
     float: left;
     font-family: Roboto;
     font-size: 13px;
@@ -76,7 +79,8 @@ header {
     margin-bottom: 8px;
 }
 .headerTopRight {
-    width: 200px;
+    width: 204px;
+    height: 126px;
     float: right;
     padding-top: 10px;
 }
@@ -98,7 +102,7 @@ header {
     margin-bottom: 6px;
 }
 .headerTopRight button {
-    width: 200px;
+    width: 204px;
     height: 26px;
     border: 0;
     background: #428bca;
@@ -118,7 +122,6 @@ header {
     width: 170px;
 }
 .headerBottom {
-    /*height: 50px;*/
     background: #428bca;
 }
 .headerBottom nav a {
@@ -130,9 +133,6 @@ header {
     padding: 18px;
     text-decoration: none;
 }
-/*.headerBottom nav a:hover {
-    background: #dedede;
-}*/
 .headerBottom nav a:first-child {
     padding: 18px 18px 18px 0;
 }
@@ -160,9 +160,6 @@ header {
     font-size: 11px;
 }
 
-
-
- 
 .mainTop .mainTopLeft,
 .mainTop .mainTopCenter,
 .mainTop .mainTopRight,
@@ -172,7 +169,6 @@ header {
     width: 310px;
     height: 250px;
     float: left;
-    /*background: #dedede;*/
     margin-right: 25px;
 }
 .mainTop,
@@ -209,7 +205,6 @@ header {
     font-family: Roboto;
     font-size: 14px;
 }
-
 .mainTopRight .mainTopRightButton {
     padding: 10px;
     background: #e6eaee;
@@ -255,7 +250,6 @@ header {
     height: 300px;
     text-align: center;
 }
-
 .mainCenterIn .mainCenterInTop > div,
 .mainCenterIn .mainCenterInCenter > div,
 .mainCenterIn .mainCenterInBottom > div {
@@ -284,10 +278,6 @@ header {
     margin-top: 14px;
     line-height: 20px;
 }
-
-
-
-
 .mainBottom .mainBottomLeft {
     width: 648px;
     float: left;
@@ -317,58 +307,10 @@ header {
 }
 .mainBottom .mainBottomRight div div a:hover {
     color: #3472a8;
-    
 }
 .mainBottom .mainBottomRight div div p:hover {
     color: #ed5564;
 }
-/*.mainBottom .mainBottomRight .mainBottomRightVk .topVk {
-    background: #428bc7;
-    padding: 4px;
-    margin-bottom: 10px;
-}
-.mainBottom .mainBottomRight .mainBottomRightVk .topVk #vk1 {
-    float: left;
-}
-.mainBottom .mainBottomRight .mainBottomRightVk .topVk p {
-    float: left;
-    margin: 4px 5px 0 5px;
-    font-size: 13px;
-    color: #fff;
-}
-.mainBottom .mainBottomRight .mainBottomRightVk .topVk #vk2 {
-    float: right;
-}
-.mainBottom .mainBottomRight .mainBottomRightVk .centerVk {
-    width: 140px;
-    margin: 0 auto;
-    text-align: center;
-    margin-bottom: 20px;
-}
-.mainBottom .mainBottomRight .mainBottomRightVk .centerVk p {
-    margin-bottom: 30px;
-    font-size: 13px;
-    color: #3e5d7a;
-}
-.mainBottom .mainBottomRight .mainBottomRightVk .centerVk #vkPic1 {
-    float: left;
-}
-.mainBottom .mainBottomRight .mainBottomRightVk .centerVk #vkPic2 {
-    float: right;
-}
-.mainBottom .mainBottomRight .mainBottomRightVk .centerVk #vkPic1 a,
-.mainBottom .mainBottomRight .mainBottomRightVk .centerVk #vkPic2 a {
-    text-decoration: none;
-}
-.mainBottom .mainBottomRight .mainBottomRightVk button {
-    width: 310px;
-    height: 34px;
-    border: 0;
-    font-family: Roboto;
-    font-size: 16px;
-    color: #fff;
-    background: #428bc7;
-}*/
 
 footer {
     background: #e6eaee;
@@ -536,7 +478,6 @@ footer {
   width: 646px;
 
 }
-
 .arrow,
 .arrow2 {
     width: 30px;
@@ -549,14 +490,6 @@ footer {
   display: block;
   border: 0;
 }
-
-
-
-/*.arrow:hover,
-.arrow2:hover{
-  background: #428bca;
-  cursor: pointer;
-}*/
 .prev,
 .prev2 {
   left: 4px;
@@ -599,7 +532,6 @@ footer {
     left: 0px;
 }
 
-
 .slider .stageSlider {
     width: 310px;
     height: 250px;
@@ -618,7 +550,6 @@ footer {
 .sliderContent {
     position: relative;
 }
-
 .slider .stageSlider .carouselSl {
     overflow: hidden;
     position: relative;
@@ -662,7 +593,6 @@ footer {
     opacity: .5;
     cursor: default;
 }
-
 .mainTopCenter {
     position: relative;
 }

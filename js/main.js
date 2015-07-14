@@ -15,22 +15,20 @@ var width = $('.images li').width();
       container.css({'margin-left': margin}) ;
     });
 
-    
     $('.prev').hover(
-function(){
-  $('.prev').next().css({display: 'block'}) ;
-},
-function(){
-  $('.none').css({display: 'none'}) ;
-});
-$('.next').hover(
-function(){
-  $('.next').next().css({display: 'block'}) ;
-},
-function(){
-  $('.none').css({display: 'none'}) ;
-});
-    
+                    function(){
+                    $('.prev').next().css({display: 'block'}) ;
+                    },
+                    function(){
+                    $('.none').css({display: 'none'}) ;
+                    });
+    $('.next').hover(
+                    function(){
+                    $('.next').next().css({display: 'block'}) ;
+                    },
+                    function(){
+                    $('.none').css({display: 'none'}) ;
+                    });
     
     var width2 = $('.images2 li').width();
     var step2 = 1;
@@ -49,24 +47,22 @@ function(){
     });
     
     $('.prev2').hover(
-function(){
-  $('.prev2').next().css({display: 'block'}) ;
-},
-function(){
-  $('.none').css({display: 'none'}) ;
-});
-$('.next2').hover(
-function(){
-  $('.next2').next().css({display: 'block'}) ;
-},
-function(){
-  $('.none').css({display: 'none'}) ;
-});
+                    function(){
+                      $('.prev2').next().css({display: 'block'}) ;
+                    },
+                    function(){
+                      $('.none').css({display: 'none'}) ;
+                    });
+    $('.next2').hover(
+                    function(){
+                      $('.next2').next().css({display: 'block'}) ;
+                    },
+                    function(){
+                      $('.none').css({display: 'none'}) ;
+                    });
     
     
-    
-    
-    
+
     $(function() {
     var connector = function(itemNavigation, carouselStage) {
         return carouselStage.jcarousel('items').eq(itemNavigation.index());
@@ -74,11 +70,9 @@ function(){
     $(function() {
         var carouselStage      = $('.carousel-stageSlider').jcarousel();
         var carouselNavigation = $('.carousel-navigationSlider').jcarousel();
-
         carouselNavigation.jcarousel('items').each(function() {
             var item = $(this);
             var target = connector(item, carouselStage);
-
             $('.slider .carousel-stageSlider')
                 .jcarousel({
             interval: 10,
