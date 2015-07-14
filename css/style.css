@@ -412,7 +412,7 @@ footer {
 }
 .footerBottom .footerBottomCenter {
     width: 346px;
-    float: left;
+    margin-left: 320px;
     text-align: center;
     padding-top: 14px;
 }
